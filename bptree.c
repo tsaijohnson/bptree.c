@@ -385,7 +385,7 @@ node *delete(node *root, char *key)
     record *rec;
     int i;
     leaf = find_leaf(root, key);
-    if (leaf = NULL)
+    if (leaf == NULL)
         return root;
     for (i = 0; i < leaf->num_keys && strcmp(leaf->keys[i], key) != 0; i++)
         ;
