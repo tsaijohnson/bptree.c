@@ -114,7 +114,7 @@ void print_tree(node *root)
     }
 
     while (p){
-        for (i = 0; i < p->num_keys; )
+        for (i = 0; i < p->num_keys; i++)
             printf("%s ", p->keys[i]);
             // printf("%d ", p->keys[i][0]);  // for test
         printf(" | ");
