@@ -492,7 +492,7 @@ node *coalesce_nodes(node *root, node *nd, node *neighbor, int nd_index)
     char *k_prime;
     node *tmp, *parent;
 
-    if (nd_index == 0)   // make sure neighbor is on the left
+    if (nd_index == 0){   // make sure neighbor is on the left
         tmp = nd;
         nd = neighbor;
         neighbor = tmp;
