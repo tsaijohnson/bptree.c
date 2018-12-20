@@ -251,7 +251,7 @@ node *insert_into_parent(node *root, node *left, node *right, char *key)
 char insert_into_node(node *nd, node *right, int index, char *key)
 {
     int i;
-    for (i = nd->num_keys; i > index; i++){
+    for (i = nd->num_keys; i > index; i--){
         nd->keys[i] = nd->keys[i-1];
         nd->pointers[i+1] = nd->pointers[i];
     }
