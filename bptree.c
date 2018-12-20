@@ -16,7 +16,7 @@ typedef struct node {
     int num_keys;
     bool is_leaf;
     struct node *next;  // used for printing
-} node
+} node;
 
 typedef struct record {
     int value;
