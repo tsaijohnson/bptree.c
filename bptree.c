@@ -305,7 +305,7 @@ node *insert_into_node_after_splitting(node *root, node *nd, node *right, int in
         new_nd->keys[i - split] = temp_ks[i];
     }
     new_nd->pointers[i - split] = temp_ps[i];
-    new_nd->parent = nd->parent
+    new_nd->parent = nd->parent;
     for (i = 0; i <= new_nd->num_keys; i++){  //  #pointers == num_keys + 1
         child = (node *)(new_nd->pointers[i]);
         child->parent = new_nd;
