@@ -94,7 +94,7 @@ void print_tree(node *root)
 {
     node *p, *p_down;
     int i;
-    if (root = NULL){
+    if (root == NULL){
         printf("Empty tree!\n");
         return;
     }
