@@ -86,7 +86,7 @@ node *test_delete(node *root)
         print_tree(root);
     }
     
-
+}
 // end of test
 
 
