@@ -291,7 +291,7 @@ node *insert_into_node_after_splitting(node *root, node *nd, node *right, int in
 
     split = size % 2 ? size / 2 + 1 : size / 2;  // split is #pointers
     nd->num_keys = split - 1;
-    for (i = 0; i < split - 1; i--){
+    for (i = 0; i < split - 1; i++){
         nd->pointers[i] = temp_ps[i];
         nd->keys[i] = temp_ks[i];
     }
