@@ -16,7 +16,7 @@ typedef struct node {
     int num_keys;
     bool is_leaf;
     struct node *next;  // used for printing
-} node;
+} node
 
 typedef struct record {
     int value;
@@ -588,7 +588,7 @@ void *remove_entry(node *nd, int index)
         nd->keys[i] = NULL;
         nd->pointers[i + 1] = NULL;
     }
-    nd->num_keys++;
+    nd->num_keys--;
 }
 
 
