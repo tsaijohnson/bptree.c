@@ -146,7 +146,7 @@ node *find_leaf(node *root, char *key)
     nd = root;
     while (!nd->is_leaf){
         for (i = 0; i < nd->num_keys && strcmp(nd->keys[i], key) <= 0; i++)
-            ;
+            
         nd = (node *)nd->pointers[i];
     }
     return nd;
